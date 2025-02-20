@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
-#define ANOATUAL 2024 // fixa o ano com que será feito o cálculo de idade(nesse caso, 2024)
+#define ANOATUAL 2025 // fixa o ano com que será feito o cálculo de idade(nesse caso, 2025)
 
 int main(int argc, char *argv[]) {
     char op;
@@ -42,6 +42,17 @@ int main(int argc, char *argv[]) {
             vogal = vogais[i];
 
             printf("\nSua vogal: %c", vogal);
+        }
+        //OPÇÃO C
+        else if(op == 'c'){
+            if(bool == 0) {
+                system("color 70");
+                bool = 1;
+            }
+            else {
+                system("color 07");
+                bool = 0;
+            }
         }
         //OPÇÃO X
         if(op == 'x'){
